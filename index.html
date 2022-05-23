@@ -5,21 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes Project</title>
     <style>
-        #ramseyEat
+        img
         {
-            max-height: 50vh;
+            padding-top: px;
+            max-height: 30vh;
+            border-radius: 20px;
+            margin: 0px auto;
+        }
+        body 
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        nav, header, main
+        {
+            width: 50vh;
+            margin: 1vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        a:hover 
+        {
+            text-decoration:underline
+        }
+        footer 
+        {
+            position: absolute;
+            bottom: 10vh;
         }
     </style>
 </head>
 <body>
-    <h1> I don't know how to cook </h1>
-    <img id = ramseyEat src = ./images/gordonEatTidePods.jpg alt = "Gordon Ramsey enjoying some delicious tide pods."> 
-    <p> Be ready, this is gonna get weird. </p>
+    <header>
+        <h1> I don't know how to cook </h1>
+    </header>
+    
+    <main>
+        <img id = ramseyEat src = ./images/gordonEatTidePods.jpg alt = "Gordon Ramsey enjoying some delicious tide pods."> 
+        <p> Be ready, this is gonna get weird. </p>
+    </main>
 
-    <ul>
-        <li> <a href = ./recipes/kraftDinner.html>How to make Kraft Dinner Macaroni</a></li>
-        <li> <a href = ./recipes/chickenNoodle.html>How to make Chicken Noodle Soup</a></li>
-        <li> <a href = ./recipes/deepDishPizza.html> How to make Chicago Style Deep Dish Pizza</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li> <a href = ./recipes/kraftDinner.html>How to make Kraft Dinner Macaroni</a></li>
+            <li> <a href = ./recipes/chickenNoodle.html>How to make Chicken Noodle Soup</a></li>
+            <li> <a href = ./recipes/thinCrustPizza.html> How to make a Thin Crust Pizza</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        A badly made page by Kyle Galway
+    </footer>
 </body>
 </html>
