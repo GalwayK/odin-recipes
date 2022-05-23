@@ -5,40 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kraft Dinner</title>
     <style>
-        #delicious
+        img
         {
-            text-decoration: line-through;
+            padding-top: px;
+            max-height: 30vh;
+            border-radius: 20px;
+            margin: 0px auto;
         }
-        #kraftDinner
+        body 
         {
-            max-height: 50vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        nav, header, main
+        {
+            border: thin black solid;
+            width: 70vh;
+            margin: 1vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        a:hover 
+        {
+            text-decoration:underline
+        }
+        footer 
+        {
+            position: absolute;
+            bottom: 10vh;
+        }
+        ul
+        {
+            width: 100%;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <h1> Vaguely Edible Kraft Dinner Macaroni</h1>
-    <img id = kraftDinner src = ../images/kraftDinner.jpg alt = "A box of Kraft Dinner Macaroni.">
-    <p> Have you ever had a hungering for something you aren't entirely certain qualifies as food? Well, hunger no longer!</p>
-    <p> What you will need: </p>
-    <ol> 
-        <li>A box of Kraft Dinner Macaroni </li>
-        <li>A pot and roughly half a litre to one litre of water</li>
-        <li>An amount of milk that you will eye-ball instead of measuring</li>
-        <li>Roughly (gestures wildly) <strong>this much</strong> butter</li>
-        <li>No sense of taste.</li>
-    </ol>
+    <header>
+        <h1> Vaguely Edible Kraft Dinner Macaroni</h1>
+    </header>
 
-    <p> Got all that, then let's begin!</p>
+    <main>
+        <img id = kraftDinner src = ../images/kraftDinner.jpg alt = "A box of Kraft Dinner Macaroni.">
+        <p> Have you ever had a hungering for something you aren't entirely certain qualifies as food? Well, hunger no longer!</p>
+        <p> What you will need: </p>
+        <ul> 
+            <li>A box of Kraft Dinner Macaroni </li>
+            <li>A pot and roughly half a litre to one litre of water</li>
+            <li>An amount of milk that you will eye-ball instead of measuring</li>
+            <li>Roughly (gestures wildly) <strong>this much</strong> butter</li>
+            <li>No sense of taste.</li>
+        </ul>
 
-    <ul>
-        <li>Fill your pot with an amount of water that you didn't bother measuring but is probably a bit more than half a litre.</li>
-        <li>Set the pot to boil, which will take roughly 2 to 10 minutes depending on appliances.</li>
-        <li>Open the Kraft Dinner package and pour the pasta into the water. Leave it to boil until soft.</li>
-        <li>Strain pasta from water and dump the water. Add butter, cheese powder from package, and milk to pot, and mix over low heat.</li>
-        <li>After sauce has reached desired texture of, "Looks good enough, I think," add pasta and mix until saturated.</li>
-        <li>Pour into a bowl of you choice and eat until you remember how you really don't like this stuff. Throw out mostly uneaten remains.</li>
-    </ul>
+        <p> Got all that, then let's begin!</p>
 
-    <p> And there you go, that's how to make a bowl of <span id = delicious>delicious</span> probably edible Kraft Dinner Macaroni!</p>
+        <ol>
+            <li>Fill your pot with an amount of water that you didn't bother measuring but is probably a bit more than half a litre.</li>
+            <li>Set the pot to boil, which will take roughly 2 to 10 minutes depending on appliances.</li>
+            <li>Open the Kraft Dinner package and pour the pasta into the water. Leave it to boil until soft.</li>
+            <li>Strain pasta from water and dump the water. Add butter, cheese powder from package, and milk to pot, and mix over low heat.</li>
+            <li>After sauce has reached desired texture of, "Looks good enough, I think," add pasta and mix until saturated.</li>
+            <li>Pour into a bowl of you choice and eat until you remember how you really don't like this stuff. Throw out mostly uneaten remains.</li>
+        </ol>
+
+        <p> And there you go, that's how to make a bowl of <span id = delicious>delicious</span> probably edible Kraft Dinner Macaroni!</p>
+    </main>
+
+
+    <nav>
+        <a href = "./../index.html"> Return to Recipe Index Page </a>
+    </nav>
+
 </body>
 </html>
